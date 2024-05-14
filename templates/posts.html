@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{%block contenido%}
+    {%for i in posts%}
+
+        <br>
+        <li>{{i.titulo}}</li>
+        <li>{{i.subtitulo}}</li>
+        <li>{{i.texto}}</li>
+
+    {% endfor %}
+
+    <br>
+    <h1>Esta es la pagina posts</h1>
+
+{%endblock%}
